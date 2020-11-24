@@ -49,24 +49,7 @@ def moph_push(_q, _line, _hn, _pt_name, _dep_name):
     except Exception as e:
         resp = str(e)
         pass
-    print(datetime.now(), resp)
-
-
-def get_patient_from_q(_q):
-    sql = f""" SELECT m.moph_line_id ,concat(m.pname,m.fname,' ',m.lname) pt_name ,m.hn 
-    FROM ovst_queue_server o
-    inner JOIN  smart_moph_connect_member m on m.hn = o.hn
-    WHERE o.date_visit = CURDATE() and o.depq = '{_q}' """
-    db = con_db_his()
-    cursor = db.cursor()
-    cursor.execute(sql)
-    row = cursor.fetchone()
-    cursor.close()
-    db.close()
-    if row is None:
-        return "moph_lind_id", "pt_name", "hn"
-    else:
-        return row[0], row[1], row[2]
+    return resp
 
 
 ### ส่งแจ้งเตือนให้มา จุดซักประวัติ ###
@@ -76,7 +59,7 @@ def sc_alert():
     q_signal = "sc"
     m, n = 5, 10
 
-    sql = f""" SELECT q.depq,a.moph_line_id ,concat(a.pname,a.fname,' ',a.lname) pt_name
+    sql = f""" SELECT q.depq,a.moph_line_id ,concat(a.pname,a.fname,' ',a.lname) pt_name ,a.hn
                    FROM ovst_queue_server q
                    inner join ovst o on o.vn = q.vn
                    LEFT JOIN smart_moph_connect_member a on a.hn = q.hn
@@ -99,9 +82,12 @@ def sc_alert():
         _q = str(rows[m - 1][0])
         _line = str(rows[m - 1][1])
         _name = str(rows[m - 1][2])
-
+        _hn = str(rows[m - 1][3])
+        _dep_name = dep_name
+        resp = moph_push(_q,_line,_hn,_)
     except Exception as e:
-        print(datetime.now(), str(e))
+        resp = str(e)
+    print(datetime.now(), resp)
 
 
 if __name__ == '__main__':
@@ -113,6 +99,4 @@ if __name__ == '__main__':
     @sio.event
     def sc1(_q):
         print(datetime.now(), f"sc1 calling {_q}")
-        q_number = f"หมายเลข {_q}"
-        moph_line_id, pt_name, hn = get_patient_from_q(_q)
         sc_alert()

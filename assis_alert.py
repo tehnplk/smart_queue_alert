@@ -56,8 +56,7 @@ WHERE o.date_visit = CURDATE() and o.depq = '{_q}' """
         data_message=data_message,
         low_priority=False
     )
-    print(datetime.now(), "calling current queue ")
-    print(resp)
+    print(datetime.now(), "calling current queue ", resp)
 
 
 ##########  data_message *** ห้ามแก้ *** ###########
@@ -106,7 +105,7 @@ def ax_alert():
     rows = cursor.fetchall()
     cursor.close()
     db.close()
-    print(datetime.now(), f"Patient at {q_signal} {dep_code} {dep_name}  =  {len(rows)}")
+    print(datetime.now(), f"Calling {q_signal} {dep_code}  =  {len(rows)}")
 
     try:
         _q = str(rows[m - 1][0])
@@ -155,7 +154,7 @@ def ay_alert():
     rows = cursor.fetchall()
     cursor.close()
     db.close()
-    print(datetime.now(), f"Patient at {q_signal} {dep_code} {dep_name}  =  {len(rows)}")
+    print(datetime.now(), f"Calling {q_signal} {dep_code}  =  {len(rows)}")
 
     try:
         _q = str(rows[m - 1][0])
@@ -204,7 +203,7 @@ def bx_alert():
     rows = cursor.fetchall()
     cursor.close()
     db.close()
-    print(datetime.now(), f"Patient at {q_signal} {dep_code} {dep_name}  =  {len(rows)}")
+    print(datetime.now(), f"Calling {q_signal} {dep_code}  =  {len(rows)}")
 
     try:
         _q = str(rows[m - 1][0])
@@ -253,7 +252,7 @@ def by_alert():
     rows = cursor.fetchall()
     cursor.close()
     db.close()
-    print(datetime.now(), f"Patient at {q_signal} {dep_code} {dep_name}  =  {len(rows)}")
+    print(datetime.now(), f"Calling {q_signal} {dep_code}  =  {len(rows)}")
 
     try:
         _q = str(rows[m - 1][0])
@@ -302,7 +301,7 @@ def rx_alert():
     rows = cursor.fetchall()
     cursor.close()
     db.close()
-    print(datetime.now(), f"Patient at {q_signal} {dep_code} {dep_name}  =  {len(rows)}")
+    print(datetime.now(), f"Calling {q_signal} {dep_code}  =  {len(rows)}")
 
     try:
         _q = str(rows[m - 1][0])
