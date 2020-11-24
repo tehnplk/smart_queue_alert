@@ -21,8 +21,8 @@ def push_alert(_token, _title, _msg_body):
 
 
 if __name__ == '__main__':
-    _title = f"อีก 5 คิวจะถึงคิวของท่าน"
-    _msg_body = f"""หมายเลข A000 กรุณาไปรอที่บริเวณ จุดทดสอบ"""
+    _title = f"ทดสอบ3 อีก 1 คิวจะถึงคิวของท่าน"
+    _msg_body = f"""หมายเลข A000 กรุณาไปรอที่บริเวณ จุดทดสอบ3"""
     _token = "fsesCPEAFf0:APA91bG95AnMCWUkofrjtXIG3zjJkbfzkOZuvTXceTf3j30rV4FBdFJZt5oYVSNae_PD8N_B0_OVGoMNR0P2li6xjYkjwjalUhckB7GjMPcL95Rc7X-ucGXma2Uixyw9y4SBkDGDpty_"
 
     resp = push_alert(_token, _title, _msg_body)
