@@ -6,7 +6,7 @@ import mysql.connector
 ###########  config ################
 
 hos_name = "โรงพยาบาลด่านขุนทด"
-queue_signal = "http://www.smartqplk.com:19009"
+queue_signal = "http://localhost:19009"
 api_key = "AIzaSyBOZuUvtAUY0V3WBwIET9000mn_bmGTCCQ"
 
 
