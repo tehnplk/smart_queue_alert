@@ -25,11 +25,11 @@ def con_db_his():
 ###########  end-config ################
 
 ##########  push_alert *** ห้ามแก้ *** ###########
-def push_alert(token, title, msg_body):
+def push_alert(_token, _title, _msg_body):
     return push_service.notify_single_device(
-        registration_id=token,
-        message_title=title,
-        message_body=msg_body,
+        registration_id=_token,
+        message_title=_title,
+        message_body=_msg_body,
         data_message=data_message,
         low_priority=False
     )
