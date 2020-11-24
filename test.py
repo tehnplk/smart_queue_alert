@@ -1,7 +1,7 @@
 from pyfcm import FCMNotification
 
 api_key = "AIzaSyBOZuUvtAUY0V3WBwIET9000mn_bmGTCCQ"
-
+push_service = FCMNotification(api_key=api_key)
 data_message = {
     "click_action": "FLUTTER_NOTIFICATION_CLICK",
     "id": "1",
@@ -23,7 +23,7 @@ def push_alert(_token, _title, _msg_body):
 if __name__ == '__main__':
     _title = f"อีก 5 คิวจะถึงคิวของท่าน"
     _msg_body = f"""หมายเลข A000 กรุณาไปรอที่บริเวณ จุดทดสอบ"""
-    _token = "fqHeYGvaiMU:APA91bFE-nVe6uGURPvhN3WzEiHcHtiQUFHpgOE-BIApYvMpKLl3g3lF6v0PBYnRpdVyVJXN4DutG7cEBj5tyVuXortc7n4IFiqWVj21B38-SCDby6cRKE8pRRaWS3qp4UHIS3kyYJAK"
+    _token = "fsesCPEAFf0:APA91bG95AnMCWUkofrjtXIG3zjJkbfzkOZuvTXceTf3j30rV4FBdFJZt5oYVSNae_PD8N_B0_OVGoMNR0P2li6xjYkjwjalUhckB7GjMPcL95Rc7X-ucGXma2Uixyw9y4SBkDGDpty_"
 
-    push_service = FCMNotification(api_key=api_key)
-    push_alert(_token, _title, _msg_body)
+    resp = push_alert(_token, _title, _msg_body)
+    print(resp)
