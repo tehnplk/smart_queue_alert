@@ -65,7 +65,7 @@ WHERE o.date_visit = CURDATE() and o.depq = '{_q}' """
         data_message=data_message,
         low_priority=False
     )
-    print(datetime.now(), f"Current queue {_q}", resp)
+    print(datetime.now(), f"Current queue {_q}", 'success', resp['success'], 'failure', resp['failure'])
 
 
 def ax_alert():
@@ -96,7 +96,7 @@ def ax_alert():
         _title = f"อีก {m} คิวจะถึงคิวของท่าน"
         _body = f"""{hos_name} หมายเลข {_q} กรุณาไปรอที่บริเวณ{dep_name}"""
         resp = push_alert(_token, _title, _body)
-        print(datetime.now(), _q, resp)
+        print(datetime.now(), _q, 'success', resp['success'], 'failure', resp['failure'])
     except Exception as e:
         print(datetime.now(), str(e))
 
@@ -106,7 +106,7 @@ def ax_alert():
         _title = f"อีก {n} คิวจะถึงคิวของท่าน"
         _body = f"""{hos_name} หมายเลข {_q} กรุณาไปรอที่บริเวณ{dep_name}"""
         resp = push_alert(_token, _title, _body)
-        print(datetime.now(), resp)
+        print(datetime.now(), _q, 'success', resp['success'], 'failure', resp['failure'])
     except Exception as e:
         print(datetime.now(), str(e))
 
@@ -139,7 +139,7 @@ def bx_alert():
         _title = f"อีก {m} คิวจะถึงคิวของท่าน"
         _body = f"""{hos_name} หมายเลข {_q} กรุณาไปรอที่บริเวณ{dep_name}"""
         resp = push_alert(_token, _title, _body)
-        print(datetime.now(), _q, resp)
+        pprint(datetime.now(), _q, 'success', resp['success'], 'failure', resp['failure'])
     except Exception as e:
         print(datetime.now(), str(e))
 
@@ -149,7 +149,7 @@ def bx_alert():
         _title = f"อีก {n} คิวจะถึงคิวของท่าน"
         _body = f"""{hos_name} หมายเลข {_q} กรุณาไปรอที่บริเวณ{dep_name}"""
         resp = push_alert(_token, _title, _body)
-        print(datetime.now(), _q, resp)
+        print(datetime.now(), _q, 'success', resp['success'], 'failure', resp['failure'])
     except Exception as e:
         print(datetime.now(), str(e))
 
@@ -182,7 +182,7 @@ def ay_alert():
         _title = f"อีก {m} คิวจะถึงคิวของท่าน"
         _body = f"""{hos_name} หมายเลข {_q} กรุณาไปรอที่บริเวณ{dep_name}"""
         resp = push_alert(_token, _title, _body)
-        print(datetime.now(), _q, resp)
+        print(datetime.now(), _q, 'success', resp['success'], 'failure', resp['failure'])
     except Exception as e:
         print(datetime.now(), str(e))
 
@@ -192,7 +192,7 @@ def ay_alert():
         _title = f"อีก {n} คิวจะถึงคิวของท่าน"
         _body = f"""{hos_name} หมายเลข {_q} กรุณาไปรอที่บริเวณ{dep_name}"""
         resp = push_alert(_token, _title, _body)
-        print(datetime.now(), _q, resp)
+        print(datetime.now(), _q, 'success', resp['success'], 'failure', resp['failure'])
     except Exception as e:
         print(datetime.now(), str(e))
 
@@ -225,7 +225,7 @@ def by_alert():
         _title = f"อีก {m} คิวจะถึงคิวของท่าน"
         _body = f"""{hos_name} หมายเลข {_q} กรุณาไปรอที่บริเวณ{dep_name}"""
         resp = push_alert(_token, _title, _body)
-        print(datetime.now(), resp)
+        print(datetime.now(), _q, 'success', resp['success'], 'failure', resp['failure'])
     except Exception as e:
         print(datetime.now(), str(e))
 
@@ -235,7 +235,7 @@ def by_alert():
         _title = f"อีก {n} คิวจะถึงคิวของท่าน"
         _body = f"""{hos_name} หมายเลข {_q} กรุณาไปรอที่บริเวณ{dep_name}"""
         resp = push_alert(_token, _title, _body)
-        print(datetime.now(), resp)
+        print(datetime.now(), _q, 'success', resp['success'], 'failure', resp['failure'])
     except Exception as e:
         print(datetime.now(), str(e))
 
@@ -266,7 +266,7 @@ def mx_alert():
         _title = f"อีก {m} คิวจะถึงคิวของท่าน"
         _body = f"""{hos_name} หมายเลข {_q} กรุณาไปรอที่บริเวณ{dep_name}"""
         resp = push_alert(_token, _title, _body)
-        print(datetime.now(), _q, resp)
+        print(datetime.now(), _q, 'success', resp['success'], 'failure', resp['failure'])
     except Exception as e:
         print(datetime.now(), str(e))
 
@@ -276,7 +276,7 @@ def mx_alert():
         _title = f"อีก {n} คิวจะถึงคิวของท่าน"
         _body = f"""{hos_name} หมายเลข {_q} กรุณาไปรอที่บริเวณ{dep_name}"""
         resp = push_alert(_token, _title, _body)
-        print(datetime.now(), _q, resp)
+        print(datetime.now(), _q, 'success', resp['success'], 'failure', resp['failure'])
     except Exception as e:
         print(datetime.now(), str(e))
 
@@ -307,7 +307,7 @@ def rx_alert():
         _title = f"อีก {m} คิวจะถึงคิวของท่าน"
         _body = f"""{hos_name} หมายเลข {_q} กรุณาไปรอที่บริเวณ{dep_name}"""
         resp = push_alert(_token, _title, _body)
-        print(datetime.now(), _q, resp)
+        print(datetime.now(), _q, 'success', resp['success'], 'failure', resp['failure'])
     except Exception as e:
         print(datetime.now(), str(e))
 
@@ -317,7 +317,7 @@ def rx_alert():
         _title = f"อีก {n} คิวจะถึงคิวของท่าน"
         _body = f"""{hos_name} หมายเลข {_q} กรุณาไปรอที่บริเวณ{dep_name}"""
         resp = push_alert(_token, _title, _body)
-        print(datetime.now(), _q, resp)
+        print(datetime.now(), _q, 'success', resp['success'], 'failure', resp['failure'])
     except Exception as e:
         print(datetime.now(), str(e))
 
