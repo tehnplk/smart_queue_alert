@@ -139,7 +139,7 @@ def bx_alert():
         _title = f"อีก {m} คิวจะถึงคิวของท่าน"
         _body = f"""{hos_name} หมายเลข {_q} กรุณาไปรอที่บริเวณ{dep_name}"""
         resp = push_alert(_token, _title, _body)
-        pprint(datetime.now(), _q, 'success', resp['success'], 'failure', resp['failure'])
+        print(datetime.now(), _q, 'success', resp['success'], 'failure', resp['failure'])
     except Exception as e:
         print(datetime.now(), str(e))
 
