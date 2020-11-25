@@ -431,7 +431,7 @@ if __name__ == '__main__':
     def mx5(_q):
         if _q != 's99999':
             mx_alert()
-            current_queue_alert(_q, "หน้าห้องตรวจโรค")  # คิวที่กดเรียก
+            current_queue_alert(_q, "ห้องการเงิน")  # คิวที่กดเรียก
             print(datetime.now(), '=======================')
 
 
@@ -439,7 +439,7 @@ if __name__ == '__main__':
     def rx1(_q):
         if _q != 's99999':
             rx_alert()
-            current_queue_alert(_q, "หน้าห้องตรวจโรค")  # คิวที่กดเรียก
+            current_queue_alert(_q, "ห้องจ่ายยา")  # คิวที่กดเรียก
             print(datetime.now(), '=======================')
 
 
@@ -447,7 +447,7 @@ if __name__ == '__main__':
     def rx2(_q):
         if _q != 's99999':
             rx_alert()
-            current_queue_alert(_q, "หน้าห้องตรวจโรค")  # คิวที่กดเรียก
+            current_queue_alert(_q, "ห้องจ่ายยา")  # คิวที่กดเรียก
             print(datetime.now(), '=======================')
 
 
@@ -455,7 +455,7 @@ if __name__ == '__main__':
     def rx3(_q):
         if _q != 's99999':
             rx_alert()
-            current_queue_alert(_q, "หน้าห้องตรวจโรค")  # คิวที่กดเรียก
+            current_queue_alert(_q, "ห้องจ่ายยา")  # คิวที่กดเรียก
             print(datetime.now(), '=======================')
 
 
@@ -463,5 +463,5 @@ if __name__ == '__main__':
     def rx4(_q):
         if _q != 's99999':
             rx_alert()
-            current_queue_alert(_q, "หน้าห้องตรวจโรค")  # คิวที่กดเรียก
+            current_queue_alert(_q, "ห้องจ่ายยา")  # คิวที่กดเรียก
             print(datetime.now(), '=======================')
