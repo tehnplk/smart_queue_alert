@@ -65,7 +65,7 @@ WHERE o.date_visit = CURDATE() and o.depq = '{_q}' """
         data_message=data_message,
         low_priority=False
     )
-    print(datetime.now(), "calling current queue ", resp)
+    print(datetime.now(), f"Current queue {_q}", resp)
 
 
 def ax_alert():
