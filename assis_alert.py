@@ -336,6 +336,7 @@ if __name__ == '__main__':
         if _q != 's99999':
             ax_alert()
             current_queue_alert(_q, "หน้าห้องตรวจโรค")  # คิวที่กดเรียก
+            print(datetime.now(), '=======================')
 
 
     @sio.event
@@ -343,6 +344,7 @@ if __name__ == '__main__':
         if _q != 's99999':
             ax_alert()
             current_queue_alert(_q, "หน้าห้องตรวจโรค")  # คิวที่กดเรียก
+            print(datetime.now(), '=======================')
 
 
     @sio.event
@@ -350,6 +352,7 @@ if __name__ == '__main__':
         if _q != 's99999':
             bx_alert()
             current_queue_alert(_q, "หน้าห้องตรวจโรค")  # คิวที่กดเรียก
+            print(datetime.now(), '=======================')
 
 
     @sio.event
@@ -357,6 +360,7 @@ if __name__ == '__main__':
         if _q != 's99999':
             bx_alert()
             current_queue_alert(_q, "หน้าห้องตรวจโรค")  # คิวที่กดเรียก
+            print(datetime.now(), '=======================')
 
 
     @sio.event
@@ -364,6 +368,7 @@ if __name__ == '__main__':
         if _q != 's99999':
             ay_alert()
             current_queue_alert(_q, "หน้าห้องตรวจโรค")  # คิวที่กดเรียก
+            print(datetime.now(), '=======================')
 
 
     @sio.event
@@ -371,6 +376,7 @@ if __name__ == '__main__':
         if _q != 's99999':
             ay_alert()
             current_queue_alert(_q, "หน้าห้องตรวจโรค")  # คิวที่กดเรียก
+            print(datetime.now(), '=======================')
 
 
     @sio.event
@@ -378,6 +384,7 @@ if __name__ == '__main__':
         if _q != 's99999':
             ay_alert()
             current_queue_alert(_q, "หน้าห้องตรวจโรค")  # คิวที่กดเรียก
+            print(datetime.now(), '=======================')
 
 
     @sio.event
@@ -385,6 +392,7 @@ if __name__ == '__main__':
         if _q != 's99999':
             ay_alert()
             current_queue_alert(_q, "หน้าห้องตรวจโรค")  # คิวที่กดเรียก
+            print(datetime.now(), '=======================')
 
 
     @sio.event
@@ -392,6 +400,7 @@ if __name__ == '__main__':
         if _q != 's99999':
             by_alert()
             current_queue_alert(_q, "หน้าห้องตรวจโรค")  # คิวที่กดเรียก
+            print(datetime.now(), '=======================')
 
 
     @sio.event
@@ -399,6 +408,7 @@ if __name__ == '__main__':
         if _q != 's99999':
             by_alert()
             current_queue_alert(_q, "หน้าห้องตรวจโรค")  # คิวที่กดเรียก
+            print(datetime.now(), '=======================')
 
 
     @sio.event
@@ -406,6 +416,7 @@ if __name__ == '__main__':
         if _q != 's99999':
             by_alert()
             current_queue_alert(_q, "หน้าห้องตรวจโรค")  # คิวที่กดเรียก
+            print(datetime.now(), '=======================')
 
 
     @sio.event
@@ -413,6 +424,7 @@ if __name__ == '__main__':
         if _q != 's99999':
             by_alert()
             current_queue_alert(_q, "หน้าห้องตรวจโรค")  # คิวที่กดเรียก
+            print(datetime.now(), '=======================')
 
 
     @sio.event
@@ -420,6 +432,7 @@ if __name__ == '__main__':
         if _q != 's99999':
             mx_alert()
             current_queue_alert(_q, "หน้าห้องตรวจโรค")  # คิวที่กดเรียก
+            print(datetime.now(), '=======================')
 
 
     @sio.event
@@ -427,6 +440,7 @@ if __name__ == '__main__':
         if _q != 's99999':
             rx_alert()
             current_queue_alert(_q, "หน้าห้องตรวจโรค")  # คิวที่กดเรียก
+            print(datetime.now(), '=======================')
 
 
     @sio.event
@@ -434,6 +448,7 @@ if __name__ == '__main__':
         if _q != 's99999':
             rx_alert()
             current_queue_alert(_q, "หน้าห้องตรวจโรค")  # คิวที่กดเรียก
+            print(datetime.now(), '=======================')
 
 
     @sio.event
@@ -441,6 +456,7 @@ if __name__ == '__main__':
         if _q != 's99999':
             rx_alert()
             current_queue_alert(_q, "หน้าห้องตรวจโรค")  # คิวที่กดเรียก
+            print(datetime.now(), '=======================')
 
 
     @sio.event
@@ -448,3 +464,4 @@ if __name__ == '__main__':
         if _q != 's99999':
             rx_alert()
             current_queue_alert(_q, "หน้าห้องตรวจโรค")  # คิวที่กดเรียก
+            print(datetime.now(), '=======================')
