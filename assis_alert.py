@@ -73,7 +73,7 @@ def ax_alert():
     dep_name = "หน้าห้องตรวจโรคทั่วไป"
     m, n = 5, 10  # เตือนคนที่เท่าไร กับ เท่าไร
 
-    sql = f""" SELECT q.depq,a.token
+    sql = f""" SELECT q.depq,a.token ,q.time_visit
                 FROM ovst_queue_server q
                 inner join ovst o on o.vn = q.vn
                 LEFT JOIN smart_assis_client a on a.hn = q.hn
@@ -116,7 +116,7 @@ def bx_alert():
     dep_name = "หน้าห้องตรวจโรคทั่วไป"
     m, n = 5, 10  # เตือนคนที่เท่าไร กับ เท่าไร
 
-    sql = f""" SELECT q.depq,a.token
+    sql = f""" SELECT q.depq,a.token ,q.time_visit
                 FROM ovst_queue_server q
                 inner join ovst o on o.vn = q.vn
                 LEFT JOIN smart_assis_client a on a.hn = q.hn
@@ -159,7 +159,7 @@ def ay_alert():
     dep_name = "ห้องตรวจโรคทั่วไป"
     m, n = 5, 10  # เตือนคนที่เท่าไร กับ เท่าไร
 
-    sql = f""" SELECT q.depq,a.token
+    sql = f""" SELECT q.depq,a.token ,q.time_visit
                 FROM ovst_queue_server q
                 inner join ovst o on o.vn = q.vn
                 LEFT JOIN smart_assis_client a on a.hn = q.hn
@@ -202,7 +202,7 @@ def by_alert():
     dep_name = "ห้องตรวจโรคทั่วไป"
     m, n = 5, 10  # เตือนคนที่เท่าไร กับ เท่าไร
 
-    sql = f""" SELECT q.depq,a.token
+    sql = f""" SELECT q.depq,a.token ,q.time_visit
                 FROM ovst_queue_server q
                 inner join ovst o on o.vn = q.vn
                 LEFT JOIN smart_assis_client a on a.hn = q.hn
@@ -245,7 +245,7 @@ def mx_alert():
     dep_name = "ห้องการเงิน"
     m, n = 5, 10  # เตือนคนที่เท่าไร กับ เท่าไร
 
-    sql = f""" SELECT q.depq,a.token
+    sql = f""" SELECT q.depq,a.token ,q.time_visit
             FROM ovst_queue_server_dep q
             LEFT JOIN smart_assis_client a on a.hn = q.hn
             WHERE q.date_visit = CURDATE()
@@ -286,7 +286,7 @@ def rx_alert():
     dep_name = "ห้องจ่ายยา"
     m, n = 5, 10  # เตือนคนที่เท่าไร กับ เท่าไร
 
-    sql = f""" SELECT q.depq,a.token
+    sql = f""" SELECT q.depq,a.token ,q.time_visit
             FROM ovst_queue_server_dep q
             LEFT JOIN smart_assis_client a on a.hn = q.hn
             WHERE q.date_visit = CURDATE()
