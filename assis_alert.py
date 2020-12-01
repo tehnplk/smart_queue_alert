@@ -334,134 +334,134 @@ if __name__ == '__main__':
     @sio.event
     def ax5(_q):
         if _q != 's99999':
-            ax_alert()
             current_queue_alert(_q, "หน้าห้องตรวจโรค")  # คิวที่กดเรียก
+            ax_alert()
             print(datetime.now(), '=======================')
 
 
     @sio.event
     def ax6(_q):
         if _q != 's99999':
-            ax_alert()
             current_queue_alert(_q, "หน้าห้องตรวจโรค")  # คิวที่กดเรียก
+            ax_alert()
             print(datetime.now(), '=======================')
 
 
     @sio.event
     def bx3(_q):
         if _q != 's99999':
-            bx_alert()
             current_queue_alert(_q, "หน้าห้องตรวจโรค")  # คิวที่กดเรียก
+            bx_alert()
             print(datetime.now(), '=======================')
 
 
     @sio.event
     def bx4(_q):
         if _q != 's99999':
-            bx_alert()
             current_queue_alert(_q, "หน้าห้องตรวจโรค")  # คิวที่กดเรียก
+            bx_alert()
             print(datetime.now(), '=======================')
 
 
     @sio.event
     def ay1(_q):
         if _q != 's99999':
-            ay_alert()
             current_queue_alert(_q, "หน้าห้องตรวจโรค")  # คิวที่กดเรียก
+            ay_alert()
             print(datetime.now(), '=======================')
 
 
     @sio.event
     def ay2(_q):
         if _q != 's99999':
-            ay_alert()
             current_queue_alert(_q, "หน้าห้องตรวจโรค")  # คิวที่กดเรียก
+            ay_alert()
             print(datetime.now(), '=======================')
 
 
     @sio.event
     def ay3(_q):
         if _q != 's99999':
-            ay_alert()
             current_queue_alert(_q, "หน้าห้องตรวจโรค")  # คิวที่กดเรียก
+            ay_alert()
             print(datetime.now(), '=======================')
 
 
     @sio.event
     def ay9(_q):
         if _q != 's99999':
-            ay_alert()
             current_queue_alert(_q, "หน้าห้องตรวจโรค")  # คิวที่กดเรียก
+            ay_alert()
             print(datetime.now(), '=======================')
 
 
     @sio.event
     def by4(_q):
         if _q != 's99999':
-            by_alert()
             current_queue_alert(_q, "หน้าห้องตรวจโรค")  # คิวที่กดเรียก
+            by_alert()
             print(datetime.now(), '=======================')
 
 
     @sio.event
     def by5(_q):
         if _q != 's99999':
-            by_alert()
             current_queue_alert(_q, "หน้าห้องตรวจโรค")  # คิวที่กดเรียก
+            by_alert()
             print(datetime.now(), '=======================')
 
 
     @sio.event
     def by6(_q):
         if _q != 's99999':
-            by_alert()
             current_queue_alert(_q, "หน้าห้องตรวจโรค")  # คิวที่กดเรียก
+            by_alert()
             print(datetime.now(), '=======================')
 
 
     @sio.event
     def by7(_q):
         if _q != 's99999':
-            by_alert()
             current_queue_alert(_q, "หน้าห้องตรวจโรค")  # คิวที่กดเรียก
+            by_alert()
             print(datetime.now(), '=======================')
 
 
     @sio.event
     def mx5(_q):
         if _q != 's99999':
-            mx_alert()
             current_queue_alert(_q, "ห้องการเงิน")  # คิวที่กดเรียก
+            mx_alert()
             print(datetime.now(), '=======================')
 
 
     @sio.event
     def rx1(_q):
         if _q != 's99999':
-            rx_alert()
             current_queue_alert(_q, "ห้องจ่ายยา")  # คิวที่กดเรียก
+            rx_alert()
             print(datetime.now(), '=======================')
 
 
     @sio.event
     def rx2(_q):
         if _q != 's99999':
-            rx_alert()
             current_queue_alert(_q, "ห้องจ่ายยา")  # คิวที่กดเรียก
+            rx_alert()
             print(datetime.now(), '=======================')
 
 
     @sio.event
     def rx3(_q):
         if _q != 's99999':
-            rx_alert()
             current_queue_alert(_q, "ห้องจ่ายยา")  # คิวที่กดเรียก
+            rx_alert()
             print(datetime.now(), '=======================')
 
 
     @sio.event
     def rx4(_q):
         if _q != 's99999':
-            rx_alert()
             current_queue_alert(_q, "ห้องจ่ายยา")  # คิวที่กดเรียก
+            rx_alert()
             print(datetime.now(), '=======================')
