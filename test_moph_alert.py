@@ -53,7 +53,8 @@ def moph_push(_q, _line, _hn, _pt_name, _dep_name):
 
 
 if __name__ == '__main__':
-    _uuid = "5fe05f31f4dc687f63adcd4f"
+    #_uuid = "5fe05f31f4dc687f63adcd4f"
+    _uuid = "5f3495441f9fcfcfe667c115"
     #_uuid = "5f3495441f9fcfcfe667c115"
     r = moph_push("A002", _uuid, "0000001", "นายทดสอบ ระบบ", "ห้องจ่ายยา")
     print(repr(r))

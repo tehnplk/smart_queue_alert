@@ -6,7 +6,7 @@ import mysql.connector
 
 ###########  config ################
 
-hos_name = "โรงพยาบาลด่านขุนทด"
+hos_name = "โรงพยาบาลทดสอบ"
 queue_signal = "http://www.smartqplk.com:19009"
 api_key = "AIzaSyBOZuUvtAUY0V3WBwIET9000mn_bmGTCCQ"
 uri_alert = "https://mophconnect.go.th/api/alert"
