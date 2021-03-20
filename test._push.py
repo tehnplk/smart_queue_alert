@@ -11,9 +11,19 @@ data_message = {
 }
 
 
-def push_alert(_token, _title, _msg_body):
+def single_push_alert(_token, _title, _msg_body):
     return push_service.notify_single_device(
         registration_id=_token,
+        message_title=_title,
+        message_body=_msg_body,
+        data_message=data_message,
+        low_priority=False
+    )
+
+
+def multi_push_alert(_tokens, _title, _msg_body):
+    return push_service.notify_multiple_devices(
+        registration_ids=_tokens,
         message_title=_title,
         message_body=_msg_body,
         data_message=data_message,
@@ -25,5 +35,6 @@ if __name__ == '__main__':
     _title = f"ทดสอบ อีก 10 คิวจะถึงคิวของท่าน"
     _msg_body = f"""หมายเลข Q001 กรุณาไปรอที่บริเวณ จุดซักประวัติ"""
     _token = "depeVgO_f7y0FLgJQSejzd:APA91bFcnVNNjKa1fy5jRsR3Vpsx0_3uONWKzoZ9fvxjrO5zZTH7z41kecMLLLurNDCmSf28vOSc2KBghKaR0n5-1cjq6etfHLGFPm_VaOhUZB6hYIqJFuE57ZQLpuz0Ufjrr8LIENSH"
-    resp = push_alert(_token, _title, _msg_body)
+    # resp = single_push_alert(_token, _title, _msg_body)
+    resp = multi_push_alert([_token], _title, _msg_body)
     print(resp)
