@@ -3,6 +3,7 @@ from pyfcm import FCMNotification
 server_key = "AAAA1bq8cok:APA91bEwnfLAUz5FQaFbCj9SB8iDkpKBYO78vZ9Ar3jx_9F8RwsjRLDRR4jHZGaEgUWxDiTYsynwv2PNhkSVsxnSRr0a37JBmi1RAoa2bVZ0d5wnA_saDViOcFcS_tOwQp-CRmMIcvwS"
 
 push_service = FCMNotification(api_key=server_key)
+
 data_message = {
     "click_action": "FLUTTER_NOTIFICATION_CLICK",
     "id": "1",
